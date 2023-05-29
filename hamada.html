@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>List of Users</title>
+  </head>
+  <body>
+    <h1>hgaghsdhas</h1>
+    <ul>
+      {parsedData.map((userData)=>{`
+      <li>`Username: ${userData.name} & Position: ${userData.position}`</li>
+      `})}
+    </ul>
+  </body>
+</html>
+
+<form action="/newUser">
+  <label for="username">UserName: </label>
+  <input type="text" name="username" id="username" />
+  <label for="position">Position: </label>
+  <input type="text" name="position" id="position" />
+  <button type="submit"></button>
+</form>
